@@ -1,0 +1,16 @@
+{
+  "name": "leap-project",
+  "version": "1.0.0",
+  "description": "community engineer search data aggregator ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.8",
+    "express": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -7,7 +7,7 @@ let app = express();
 app.use( require('./controllers/search.js'));
 
 //View Engine
-app.set('view enging', 'ejs');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
@@ -26,4 +26,3 @@ app.get('/', function(req, res) {
 app.listen(3000, function() {
     console.log("Server started on port 3000...");
 })
-

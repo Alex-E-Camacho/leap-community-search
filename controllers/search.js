@@ -8,7 +8,8 @@ router.get('/search', function(req, res) {
 router.get('/search/results', function(req, res) {
     let testTerm = req.query.search_query;
     res.render('../views/results', {
-        testTerm: testTerm
+        testTerm: testTerm,
+        testENV: process.env.TEST_VAR
     });
 })
 

@@ -1,3 +1,7 @@
-<p>Hello from results.js!</p>
+<h1>Results</h1>
 
-<p><%= testTerm %></p>
+<ul>
+    <% test.forEach(function(result){ %>
+        <li><%=result.name%></li>
+    <% }) %>
+</ul>

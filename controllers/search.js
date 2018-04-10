@@ -7,9 +7,12 @@ router.get('/search', function(req, res) {
 });
 
 router.get('/search/results', function(req, res) {
-    let testTerm = bing.bing_web_search(req.query.search_query);
+    let searchResults = bing.bing_web_search(req.query.search_query);
+    let test = searchResults.then(function(results) {
+         return results;
+    });
     res.render('../views/results', {
-        testTerm: testTerm
+        test : test
     });
 })
 

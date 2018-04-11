@@ -1,6 +1,6 @@
 <h1>Results</h1>
 
-
+    <h3>MS Docs</h3>
     <% for(var i in test.value) { %>
         <table style="width:45%">
             <tr>
@@ -11,6 +11,22 @@
             </tr>
             <tr>
                 <td><%=test.value[i].snippet%></td>
+            </tr>
+        </table>
+        <br>
+    <% } %>
+
+    <h3>StackOverflow</h3>
+    <% for(var i in soSearchResults) { %>
+        <table style="width:45%">
+            <tr>
+                <th style="text-align:left;font-size:18"><a href="<%=soSearchResults[i].link%>"><%=soSearchResults[i].title%></a></th>
+            </tr>
+            <tr>
+                <td style="color:gray;font-size:12"><%=soSearchResults[i].link%></td>
+            </tr>
+            <tr>
+                <td><%=soSearchResults[i].tags%></td>
             </tr>
         </table>
         <br>

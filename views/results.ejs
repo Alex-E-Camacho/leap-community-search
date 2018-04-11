@@ -1,3 +1,7 @@
-<p>Hello from results.js!</p>
+<h1>Results</h1>
 
-<p><%= testTerm %></p>
+<ul>
+    <% for(var i in test.value) { %>
+        <li><%=test.value[i].name%></li>
+    <% } %>
+</ul>

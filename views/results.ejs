@@ -1,7 +1,7 @@
 <h1>Results</h1>
 
 <ul>
-    <% test.forEach(function(result){ %>
-        <li><%=result.name%></li>
-    <% }) %>
+    <% for(var i in test.value) { %>
+        <li><%=test.value[i].name%></li>
+    <% } %>
 </ul>

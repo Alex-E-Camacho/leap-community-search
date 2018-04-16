@@ -1,0 +1,6 @@
+{
+    "development" : {
+        "database": "database_development",
+        "dialect": "mysql"
+    }
+}

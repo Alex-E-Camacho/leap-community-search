@@ -5,7 +5,10 @@ require('dotenv').config();
 
 let app = express();
 
-app.use( require('./controllers/search.js'));
+app.use(require('./controllers/search.js'));
+
+// Set Static Path
+app.use(express.static(path.join(__dirname + '/public')));
 
 //View Engine
 app.set('view engine', 'ejs');
@@ -17,8 +20,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 
-// Set Static Path
-app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', function(req, res) {
     res.redirect('/search');

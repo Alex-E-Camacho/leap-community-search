@@ -11,7 +11,10 @@
     "body-parser": "*",
     "dotenv": "^5.0.1",
     "ejs": "^2.5.8",
-    "express": "*"
+    "express": "*",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6",
+    "sequelize-cli": "^4.0.0"
   },
   "author": "",
   "license": "ISC"

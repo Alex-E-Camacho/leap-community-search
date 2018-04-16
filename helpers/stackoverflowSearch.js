@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-let stackoverflow_search = function(search) {
+let stackoverflowSearch = function(search) {
     let searchEncoded = encodeURIComponent(search);
 
     return axios.get('http://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&q=' + searchEncoded + '&site=stackoverflow')
@@ -13,5 +13,5 @@ let stackoverflow_search = function(search) {
 }
 
 module.exports = {
-    stackoverflow_search: stackoverflow_search
+    stackoverflowSearch: stackoverflowSearch
 }

@@ -9,21 +9,6 @@ router.get('/search', function(req, res) {
     res.render('../views/index');
 });
 
-// router.get('/search/results', async function(req, res) {
-//     let bingWebSearchResults = bingWebSearch.bingWebSearch(req.query.search_query);
-//     let test = await bingWebSearchResults.then(function(results) {
-//         return results;
-//     });
-//     let soSearch = stackoverflowSearch.stackoverflowSearch(req.query.search_query)
-//     let soSearchResults = await soSearch.then(function(results) {
-//         return results;
-//     })
-//     res.render('../views/results', {
-//         test : test,
-//         soSearchResults : soSearchResults
-//     });
-// })
-
 router.get('/search/results', function(req, res) {
   axios.all([
     bingWebSearch.bingWebSearch(req.query.search_query),

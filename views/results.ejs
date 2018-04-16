@@ -1,32 +1,32 @@
 <h1>Results</h1>
 
     <h3>MS Docs</h3>
-    <% for(var i in test.value) { %>
+    <% for(var i in bing.value) { %>
         <table style="width:45%">
             <tr>
-                <th style="text-align:left;font-size:18"><a href="<%=test.value[i].url%>"><%=test.value[i].name%></a></th>
+                <th style="text-align:left;font-size:18"><a href="<%=bing.value[i].url%>"><%=bing.value[i].name%></a></th>
             </tr>
             <tr>
-                <td style="color:gray;font-size:12"><%=test.value[i].displayUrl%></td>
+                <td style="color:gray;font-size:12"><%=bing.value[i].displayUrl%></td>
             </tr>
             <tr>
-                <td><%=test.value[i].snippet%></td>
+                <td><%=bing.value[i].snippet%></td>
             </tr>
         </table>
         <br>
     <% } %>
 
     <h3>StackOverflow</h3>
-    <% for(var i in soSearchResults) { %>
+    <% for(var i in stackoverflow) { %>
         <table style="width:45%">
             <tr>
-                <th style="text-align:left;font-size:18"><a href="<%=soSearchResults[i].link%>"><%=soSearchResults[i].title%></a></th>
+                <th style="text-align:left;font-size:18"><a href="<%=stackoverflow[i].link%>"><%=stackoverflow[i].title%></a></th>
             </tr>
             <tr>
-                <td style="color:gray;font-size:12"><%=soSearchResults[i].link%></td>
+                <td style="color:gray;font-size:12"><%=stackoverflow[i].link%></td>
             </tr>
             <tr>
-                <td><%=soSearchResults[i].tags%></td>
+                <td><%=stackoverflow[i].tags%></td>
             </tr>
         </table>
         <br>

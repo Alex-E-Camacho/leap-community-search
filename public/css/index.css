@@ -1,0 +1,23 @@
+.container {
+  /* background-color: blue; */
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-top: 110px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 100px;
+  font-family: 'Roboto', sans-serif;
+  color: #007FFF;
+  font-variant: small-caps;
+  font-weight: 100;
+}
+
+.search-bar {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-style: none none solid none;
+}

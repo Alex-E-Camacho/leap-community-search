@@ -5,7 +5,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url" : "https://github.com/Alex-E-Camacho/leap-community-search.git"
+    "url": "https://github.com/Alex-E-Camacho/leap-community-search.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,9 +16,9 @@
     "dotenv": "^5.0.1",
     "ejs": "^2.5.8",
     "express": "*",
-    "mysql2": "^1.5.3",
     "sequelize": "^4.37.6",
-    "sequelize-cli": "^4.0.0"
+    "sequelize-cli": "^4.0.0",
+    "tedious": "^2.3.1"
   },
   "author": "",
   "license": "ISC"
